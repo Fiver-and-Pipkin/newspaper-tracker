@@ -10,7 +10,7 @@ Newshound is a program that allows a newspaper to keep track of its specialized 
 * The newspaper owner is able to add reporters' name, years of employment and birthday to a particular beat.
 * The website then displays the beats with the reporters listed by name.
 * The newspaper owner is also able to filter or search the beats.
-* The newspaper owner can click on a reporter and see all of the details about that reporter.
+* The newspaper owner can click on a beat and see all of the details about the reporters assigned to it.
 
 Installation
 ------------
