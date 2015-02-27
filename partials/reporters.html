@@ -1,23 +1,12 @@
-<div ng-show="beat.reporters.length">
+
   <h2>Reporter Assignment for {{ beat.name }}</h2>
   <ul>
     <li ng-repeat="item in beat.reporters">
-      <a ui-sref="reporters({ reporterId: item.id})">{{item.name}}</a> (Click name to see details)
+      <a ui-sref="reporters({ reporterId: item.id})">{{item.name}}</a>
+      {{item.yearsEmployed}} Years employed with us | Date of Birth: {{item.birthday|date:'mediumDate'}}
     </li>
   </ul>
-</div>
 
 
-
-
-<h1>Reporter Details:</h1>
-<h3>{{reporter.name}}</h3>
-
-
-<h3>reporter deets:</h3>
-
-<p ng-repeat="reporter in beat.reporters">
-  {{reporter}}
-</p>
 
 <a ui-sref="beats">Go back</a>
