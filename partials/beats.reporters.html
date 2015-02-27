@@ -1,23 +1,24 @@
 <hr>
 <div>
-  <h2>Add a reporter to {{ beat.name }}</h2>
+  <h2>Add a reporter to the {{ beat.name }} Beat:</h2>
   <form ng-submit="addReporter()" class="form-inline" role="form">
     <div class="form-group">
-      <p>Name: <input type="text" ng-model="reporterName" class="form-control" placeholder="Enter the reporter's name"></p>
-      <p>Years Employed: <input type="number" ng-model="reporterYearsEmployed" class="form-control" placeholder="# of years employed"></p>
-      <p>Date of Birth: <input type="date" ng-model="reporterBirthday" class="form-control" placeholder="date of birth"></p>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-    </div>
+      <p>Name: <input type="text" autofocus ng-model="reporterName" class="form-control" placeholder="Enter the reporter's name" required></p>
+      <p>Years Employed: <input type="number" ng-model="reporterYearsEmployed" class="form-control" placeholder="# of years employed" required></p>
+      <p>Date of Birth: <input type="date" ng-model="reporterBirthday" class="form-control" placeholder="date of birth" required></p>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
 </div>
 
-
-<div ng-show="beat.reporters.length">
-  <h2>Reporter Assignment for {{ beat.name }}</h2>
-  <ul>
-    <li ng-repeat="item in beat.reporters">
-      <strong>{{item.name}} :</strong>
-      {{item.yearsEmployed}} Years employed with us | Date of Birth: {{item.birthday|date:'mediumDate'}}
-    </li>
-  </ul>
+<div class="jumbotron">
+  <div ng-show="beat.reporters.length">
+    <h2>Reporter Assignments for the {{ beat.name }} Beat</h2>
+    <ul>
+      <li ng-repeat="item in beat.reporters">
+        <strong>{{item.name}} :</strong>
+        {{item.yearsEmployed}} Years employed with us | Date of Birth: {{item.birthday|date:'mediumDate'}}
+      </li>
+    </ul>
+  </div>
 </div>
