@@ -2,7 +2,10 @@
   <h1>Here are all of the beats your paper covers:</h1>
   <ul>
     <li ng-repeat="item in beats">
-      <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}}</a>
+      <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}}</a> (Click name to add reporter)
+      <div class="reportersDetails">
+        {{item.reporters.length}} <a ui-sref="reporters({ reporterId: item.id})">Reporters Assigned</a>
+      </div>
     </li>
   </ul>
 </div>

@@ -19,4 +19,10 @@ newspaperTracker.config(function($stateProvider) {
     controller: "ReportersCtrl"
   });
 
+  $stateProvider.state('reporters', {
+    url: "/reporters",
+    templateUrl: "partials/reporters.html",
+    controller: "ReportersCtrl"
+  });
+
 });
