@@ -16,11 +16,19 @@ Installation
 ------------
 
 Install Newshound by first cloning the repository.
+
+```
 $ git clone https://github.com/dacravey/newspaper-tracker.git
 
 ```
 
-Must run web server to view. (For Mac, in the terminal, enter $ python -m SimpleHTTPServer. On Windows, you can download Mongoose, copy it to your project folder, and double-click it to launch a server and open your page in the browser.) Then in your web browser, simply pull up the program by navigating to localhost:8000.
+Must run web server to view. (For Mac, in the terminal, enter
+
+```
+$ python -m SimpleHTTPServer.
+
+```
+On Windows, you can download Mongoose, copy it to your project folder, and double-click it to launch a server and open your page in the browser.) Then in your web browser, simply pull up the program by navigating to localhost:8000.
 
 Contribute
 ----------
