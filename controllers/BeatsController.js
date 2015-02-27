@@ -1,5 +1,4 @@
-newspaperTracker.controller('BeatsCtrl',
-function BeatCtrl($scope, BeatsFactory) {
+newspaperTracker.controller('BeatsCtrl', function BeatsCtrl($scope, BeatsFactory) {
   $scope.beats = BeatsFactory.beats;
   $scope.BeatsFactory = BeatsFactory;
 });
