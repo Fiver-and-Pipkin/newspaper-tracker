@@ -16,7 +16,7 @@
   <h2>Reporter Assignment for {{ beat.name }}</h2>
   <ul>
     <li ng-repeat="item in beat.reporters">
-      <a ui-sref="reporters()">{{item.name}}</a>
+      <strong>{{item.name}} :</strong>
       {{item.yearsEmployed}} Years employed with us | Date of Birth: {{item.birthday|date:'mediumDate'}}
     </li>
   </ul>

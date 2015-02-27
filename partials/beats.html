@@ -34,7 +34,7 @@
     <li ng-repeat="item in beats">
       <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}}</a> (Click name to add reporter)
       <div class="reportersDetails">
-        {{item.reporters.length}} <a ui-sref="reporters({ reporterId: item.id})">Reporters Assigned</a>
+        {{item.reporters.length}} Reporters Assigned
       </div>
     </li>
   </ul>
